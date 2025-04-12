@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    
+    <meta name="description" content="Meeting minutes for the Sample Team meeting.">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Got this from the HTML Basic Resources -->
+    <link rel="icon" href="favicon.ico">
+    <title>Sample Team Meeting Minutes</title>
+  </head>
+  <body>
+    
+    <header>
+      <div>Counter Strike</div>
+      <span>*name is an in-progress</span>
+      <h1>Card Catalog First Brainstorm</h1>
+      <nav>
+        <ul>
+          <li><a href="#meeting-details">Meeting Details</a></li>
+          <li><a href="#attendance">Attendance</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#tasks">Tasks</a></li>
+          <li><a href="#pictures">picture</a></li>
+          <li><a href="#feedback">Feedback Form</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <section id="meeting-details">
+        <h2>Meeting Details</h2>
+        <h3>Meeting Title: Project Brainstorming</h3>
+        <p><strong>Date:</strong> <b>April 20, 2025</b></p>
+        <p><em>Time:</em> <i>10:00 AM - 11:00 AM</i></p>
+      </section>
+      <hr>
+
+      <section id="attendance">
+        <h2>Attendance</h2>
+        <ul>
+          <li>Andrew Lam</li>
+          <li>Ada He</li>
+          <li>Parwiz Khan</li>
+          <li>Arturo Lopez Vazquez</li>
+        </ul>
+      </section>
+      <hr>
+
+      <!-- Agenda Section -->
+      <section id="agenda">
+        <h2>Agenda</h2>
+        <ol>
+          <li>Project Overview</li>
+          <li>Roles and Responsibilities</li>
+          <li>Timeline Discussion</li>
+          <li>Feedback Form</li>
+        </ol>
+      </section>
+      <hr>
+
+      <!--Things to do -->
+      <section id="Tasks">
+        <h2>To Do List</h2>
+        <article>
+          <h3>Past Actions</h3>
+          <p>Review of previous Meeting:</p>
+          <ul>
+            <li>Finalize project scope</li>
+            <li>Update project documentation</li>
+          </ul>
+        </article>
+       
+        <article>
+          <h3>Current/Present Actions</h3>
+          <p>New topics introduced during the meeting:</p>
+          <ul>
+            <li>Onboarding team members to github</li>
+            <li>Finalize Github Page and video</li>
+          </ul>
+        </article>
+        <!-- Miscellaneous Comments -->
+        <article>
+          <h3>Miscellaneous Comments</h3>
+          <p>Additional comments and suggestions:</p>
+          <details>
+            <summary>Click to view detailed comments</summary>
+            <p>
+              The team emphasized the importance of transparent communication.<br>
+              More ideas are to be requested on the topic of our product.
+            </p>
+          </details>
+        </article>
+      </section>
+      <hr>
+
+      <!-- Media Section -->
+      <section id="pictures">
+        <h2>Media Presentations</h2>
+        <figure>
+          <img src="https://developer.okta.com/assets-jekyll/blog/whiteboarding-for-developers/whiteboard-example-2555d56b7edbdebd9768dddbb47a4753148fb06c2498d2682b150748bf6e6e74.jpg" alt="Whiteboard diagram of project architecture">
+          <figcaption>Whiteboard Diagram of Project Architecture</figcaption>
+        </figure>
+        <article>
+          <h3>Meeting Recordings</h3>
+          <p>Audio Recording of the Meeting:</p>
+          <audio controls src="Record (online-voice-recorder.com).mp3">
+          </audio>
+          <p>Video Recording of the Meeting:</p>
+          <video controls width="320" height="240">
+            <source src="testvideo.mp4" type="video/mp4">
+          </video>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <section id="feedback">
+        <h2>Meeting Feedback Form</h2>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Provide Your Feedback</legend>
+            <p>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Your Name">
+            </p>
+            <p>
+              <label for="date">Date:</label>
+              <input type="date" id="date" name="date">
+            </p>
+            <p>
+              <label>Meeting Satisfaction (choose one):</label><br>
+              <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+              <label for="satisfied">Satisfied</label>
+              <input type="radio" id="neutral" name="satisfaction" value="neutral">
+              <label for="neutral">Neutral</label>
+              <input type="radio" id="dissatisfied" name="satisfaction" value="dissatisfied">
+              <label for="dissatisfied">Dissatisfied</label>
+            </p>
+            <p>
+              <label>Topics of Interest (select one or more):</label><br>
+              <input type="checkbox" id="tech" name="topics" value="technology">
+              <label for="tech">Technology</label>
+              <input type="checkbox" id="management" name="topics" value="management">
+              <label for="management">Management</label>
+            </p>
+            <p>
+              <label for="comments">Comments:</label><br>
+              <textarea id="comments" name="comments" rows="4" cols="50">Your comments here...</textarea>
+            </p>
+            <p>
+              <label for="color">Favorite Color (from list):</label>
+              <input list="colors" id="color" name="color">
+              <datalist id="colors">
+                <option value="Red">
+                <option value="Blue">
+                <option value="Green">
+                <option value="Yellow">
+              </datalist>
+            </p>
+            <p>
+              <label for="test">Choose your number:</label>
+              <select id="number" name="number">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </p>
+            <p>
+              <button type="submit">Submit Feedback</button>
+            </p>
+          </fieldset>
+        </form>
+      </section>
+      <p>Meeting minutes created on April 10, 2025 &copy; Sample Team</p>
+    </footer>
+  </body>
+</html>
