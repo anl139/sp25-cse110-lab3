@@ -2,46 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    
     <meta name="description" content="Meeting minutes for the Sample Team meeting.">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Got this from the HTML Basic Resources -->
     <link rel="icon" href="favicon.ico">
     <title>CSE 110 Lab 2</title>
   </head>
   <body>
-    
-    <header>
-      <div>Counter Strike</div>
-      <span>*name is an in-progress</span>
-      <span> I guess this is how span works</span>
+    <!-- fixed-header to demonstrate position: fixed -->
+    <header class="fixed-header">
+      <!-- block-example for display:block -->
+      <div class="block-example">Block Example (display:block)</div>
+      <!-- inline-block-example for display:inline-block -->
+      <span class="inline-block-example">Inline-Block Example</span>
+      <!-- inline-example for display:inline -->
+      <span class="inline-example">Inline Example</span>
+      <!-- relative-box to demonstrate position: relative -->
+      <div class="relative-box">Relative Box</div>
+
       <h1>Card Catalog First Brainstorm</h1>
       <nav>
-        <ul>
+        <ul class="highlight"> 
           <li><a href="#meeting-details">Meeting Details</a></li>
           <li><a href="#attendance">Attendance</a></li>
           <li><a href="#agenda">Agenda</a></li>
           <li><a href="#tasks">Tasks</a></li>
-          <li><a href="#pictures">picture</a></li>
+          <li><a href="#pictures">Pictures</a></li>
           <li><a href="#feedback">Feedback Form</a></li>
         </ul>
       </nav>
     </header>
 
-    <!-- Main Section -->
+    
+    <div class="absolute-box">Absolute Box (10cm × 2in, 12pt padding)</div>
+
     <main>
+
       <section id="meeting-details">
         <h2>Meeting Details</h2>
         <h3>Meeting Title: Project Brainstorming</h3>
         <p><strong>Date:</strong> <b>April 20, 2025</b></p>
-        <p><em>Time:</em> <i>10:00 AM - 11:00 AM</i></p>
+        <p><em>Time:</em> <i>10:00 AM – 11:00 AM</i></p>
       </section>
       <hr>
 
       <section id="attendance">
         <h2>Attendance</h2>
-        <ul>
+        
+        <ul class="attendance-list">
           <li>Andrew Lam</li>
           <li>Ada He</li>
           <li>Parwiz Khan</li>
@@ -50,21 +58,21 @@
       </section>
       <hr>
 
-      <!-- Agenda Section -->
-      <section id="agenda">
+    
+      <section id="agenda" class="highlight">
         <h2>Agenda</h2>
+        <!-- Selector List with <ol> -->
         <ol>
           <li>Project Overview</li>
-          <li>Roles and Responsibilities</li>
+          <li>Roles & Responsibilities</li>
           <li>Timeline Discussion</li>
           <li>Feedback Form</li>
         </ol>
       </section>
       <hr>
 
-      <!--Things to do -->
-      <section id="tasks">
-        <h2>To Do List</h2>
+  
+      <section id="tasks" class="tasks-grid">
         <article>
           <h3>Past Actions</h3>
           <p>Review of previous Meeting:</p>
@@ -73,43 +81,42 @@
             <li>Update project documentation</li>
           </ul>
         </article>
-       
+
         <article>
-          <h3>Current/Present Actions</h3>
-          <p>New topics introduced during the meeting:</p>
+          <h3>Current Actions</h3>
+          <p>New topics introduced:</p>
           <ul>
-            <li>Onboarding team members to github</li>
-            <li>Finalize Github Page and video</li>
+            <li>Onboard team members to GitHub</li>
+            <li>Finalize GitHub Page & video</li>
           </ul>
         </article>
-        <!--  Comments -->
+
         <article>
-          <h3>Some Comments</h3>
-          <p>Additional comments and suggestions:</p>
+          <h3>Comments</h3>
+          <p>Additional suggestions:</p>
           <details>
-            <summary>Click to view detailed comments</summary>
+            <summary>View detailed comments</summary>
             <p>
-              The team emphasized the importance of transparent communication.<br>
-              More ideas are to be requested on the topic of our product.
+              Transparent communication is key.<br>
+              More ideas on product direction requested.
             </p>
           </details>
         </article>
       </section>
       <hr>
 
-      <!-- Media Section -->
       <section id="pictures">
         <h2>Media Presentations</h2>
-        <figure>
-          <img src="https://developer.okta.com/assets-jekyll/blog/whiteboarding-for-developers/whiteboard-example-2555d56b7edbdebd9768dddbb47a4753148fb06c2498d2682b150748bf6e6e74.jpg" alt="Whiteboard diagram of project architecture">
+        <figure class="has-image">
+          <img src="https://developer.okta.com/assets-jekyll/blog/whiteboarding-for-developers/whiteboard-example-2555d56b7edbdebd9768dddbb47a4753148fb06c2498d2682b150748bf6e6e74.jpg"
+               alt="Whiteboard diagram of project architecture">
           <figcaption>Whiteboard Diagram of Project Architecture</figcaption>
         </figure>
         <article>
-          <h3>Meeting Recordings</h3>
-          <p>Audio Recording of the Meeting:</p>
-          <audio controls src="Record (online-voice-recorder.com).mp3">
-          </audio>
-          <p>Video Recording of the Meeting:</p>
+          <h3>Recordings</h3>
+          <p>Audio:</p>
+          <audio controls src="Record (online-voice-recorder.com).mp3"></audio>
+          <p>Video:</p>
           <video controls width="320" height="240">
             <source src="testvideo.mp4" type="video/mp4">
           </video>
@@ -119,7 +126,7 @@
 
     <footer>
       <section id="feedback">
-        <h2>Meeting Feedback Form</h2>
+        <h2>Feedback Form</h2>
         <form action="#" method="post">
           <fieldset>
             <legend>Provide Your Feedback</legend>
@@ -132,7 +139,7 @@
               <input type="date" id="date" name="date">
             </p>
             <p>
-              <label>Meeting Satisfaction (choose one):</label><br>
+              <label>Satisfaction:</label><br>
               <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
               <label for="satisfied">Satisfied</label>
               <input type="radio" id="neutral" name="satisfaction" value="neutral">
@@ -141,7 +148,7 @@
               <label for="dissatisfied">Dissatisfied</label>
             </p>
             <p>
-              <label>Topics of Interest (select one or more):</label><br>
+              <label>Topics (choose):</label><br>
               <input type="checkbox" id="tech" name="topics" value="technology">
               <label for="tech">Technology</label>
               <input type="checkbox" id="management" name="topics" value="management">
@@ -149,10 +156,10 @@
             </p>
             <p>
               <label for="comments">Comments:</label><br>
-              <textarea id="comments" name="comments" rows="4" cols="50">Your comments here...</textarea>
+              <textarea id="comments" name="comments" rows="4" cols="50">Your comments here…</textarea>
             </p>
             <p>
-              <label for="color">Favorite Color (from list):</label>
+              <label for="color">Favorite Color:</label>
               <input list="colors" id="color" name="color">
               <datalist id="colors">
                 <option value="Red">
@@ -162,7 +169,7 @@
               </datalist>
             </p>
             <p>
-              <label for="test">Choose your number:</label>
+              <label for="number">Choose a number:</label>
               <select id="number" name="number">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -176,7 +183,9 @@
           </fieldset>
         </form>
       </section>
-      <p>Meeting minutes created on April 10, 2025 &copy; Sample Team</p>
+      <!-- hidden text to demo .hidden -->
+      <p class="hidden">You shouldn't see me!</p>
+      <p>Meeting minutes created on April 10, 2025 &copy; Sample Team</p>
     </footer>
   </body>
 </html>
